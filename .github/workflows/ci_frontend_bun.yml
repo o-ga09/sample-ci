@@ -1,10 +1,6 @@
 name: Coverage Report
 on:
   push:
-    paths:
-      - "**.ts"
-      - "**.tsx"
-      - .github/workflows/ci_frontend_bun.yml
   pull_request:
 jobs:
   tests:

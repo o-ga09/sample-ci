@@ -1,10 +1,6 @@
 name: Frontend Test
 on:
   push:
-    paths:
-      - "*.ts"
-      - "**.tsx"
-      - .github/workflows/ci_frontend_node.yml
   pull_request:
 jobs:
   test:

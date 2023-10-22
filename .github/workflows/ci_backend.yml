@@ -3,11 +3,7 @@ name: Test
 # ワークフローを実行する条件
 on:
   # push時に.goとwarkflowの定義ファイルに変更があった場合と
-  # releaseブランチにpull request時にが作成された場合に、workflowが実行される
   push:
-    paths:
-      - "**.go"
-      - .github/workflows/ci.yml
   pull_request:
 # 実行するジョブを定義する
 jobs:
