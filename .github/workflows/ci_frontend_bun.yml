@@ -13,8 +13,8 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
 
+      #　node_modulesのあるディレクトリに移動してください
       - name: Install dependencies
-        #　node_modulesのあるディレクトリに移動してください
         run: |
           cd frontend
           bun install

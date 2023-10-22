@@ -15,8 +15,8 @@ jobs:
         with:
           node-version: "18"
 
+      # node_modulesのあるディレクトリに移動してください
       - name: Install dependencies
-        # node_modulesのあるディレクトリに移動してください
         run: |
           cd frontend
           npm install
@@ -27,8 +27,8 @@ jobs:
           cd frontend
           npm run lint
 
+      #　node_modulesのあるディレクトリに移動してください
       - name: Run Jest tests
-        #　node_modulesのあるディレクトリに移動してください
         run: |
           cd frontend
           npm run test
