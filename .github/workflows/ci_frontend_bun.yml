@@ -29,4 +29,4 @@ jobs:
       - name: Run test
         run: |
           cd frontend
-          bun run test
+          bun test
