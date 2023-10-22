@@ -1,0 +1,36 @@
+name: Coverage Report
+on:
+  push:
+    paths:
+      - "**.ts"
+      - "**.tsx"
+      - .github/workflows/ci_frontend_bun.yml
+  pull_request:
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install dependencies
+        #　node_modulesのあるディレクトリに移動してください
+        run: |
+          cd frontend
+          bun install
+
+      #　node_modulesのあるディレクトリに移動してください
+      - name: Run lint
+        run: |
+          cd frontend
+          bun run lint
+
+      #　node_modulesのあるディレクトリに移動してください
+      - name: Run test
+        run: |
+          cd frontend
+          bun run test
