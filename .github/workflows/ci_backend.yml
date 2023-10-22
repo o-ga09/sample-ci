@@ -1,5 +1,5 @@
 # workflowの名前
-name: Test
+name: Backend Test
 # ワークフローを実行する条件
 on:
   # push時に.goとwarkflowの定義ファイルに変更があった場合と

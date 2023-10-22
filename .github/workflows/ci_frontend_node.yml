@@ -1,4 +1,4 @@
-name: Frontend Test
+name: Frontend Test With Node
 on:
   push:
   pull_request:
