@@ -1,0 +1,13 @@
+name: Tag Release
+on:
+  push:
+    branches-ignore:
+      - "**"
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Release"
