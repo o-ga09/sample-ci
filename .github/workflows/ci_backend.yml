@@ -27,3 +27,9 @@ jobs:
       # カバレッジれポートを出力する
       - name: create report
         uses: k1LoW/octocov-action@v0
+
+      - name: environment variable test
+        run: |
+          token="test"
+          echo "TOKEN=$(token)" >> $GITHUB_ENV
+          echo ${{ env.TOKEN }}
