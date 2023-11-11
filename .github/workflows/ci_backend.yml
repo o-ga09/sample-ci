@@ -31,7 +31,7 @@ jobs:
       - name: environment variable test
         run: |
           echo TOKEN=$(curl -X GET \
-          -H "Content-type: application/json" \
+          -H "Content-type: application/json"\
           https://mh-api-v2-8aznfogc.an.gateway.dev/v1/health | jq -r '.Message') >> $GITHUB_ENV
 
       - name: test
