@@ -15,9 +15,6 @@ jobs:
 
       - name: "tag Release"
         run: |
-          if [ "${{ startsWith(github.ref, 'refs/tags/v*') }}" = "true" ]; then
+          if [ "${{ startsWith(github.ref, 'refs/tags/') }}" = "true" ]; then
             echo "【PROD】This is tag push. Continue with your steps."
-          elif [ "${{ startsWith(github.ref, 'refs/tags/stgv*') }}" = "true" ]; then
-            echo "【STG】This is tag push. Continue with your steps."
-          else
-            echo "【DEV】This is tag push. Continue with your steps."
+          fi
