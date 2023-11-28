@@ -46,3 +46,11 @@ script
 ### tag_release.yml
 
 tagリリース用のCDパイプライン
+
+## deploy_aws.yml
+
+AWSにデプロイ用のパイプライン
+
+## deploy_gcp.yml
+
+GCPのCloud Runにデプロイ用のパイプライン
