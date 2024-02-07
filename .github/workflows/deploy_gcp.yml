@@ -5,6 +5,7 @@
 # - GCP_REGION
 # - GCP_REPOSITORY
 # - GCP_SERVICE_ACCOUNT
+# - GCP_SA_KEY
 #########################
 name: GCP Deploy
 
