@@ -4,6 +4,8 @@ name: Backend Test
 on:
   # push時に.goとwarkflowの定義ファイルに変更があった場合と
   push:
+    branches-ignore:
+      - "main"
   pull_request:
 # 実行するジョブを定義する
 jobs:
