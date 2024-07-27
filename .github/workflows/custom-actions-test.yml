@@ -11,3 +11,8 @@ jobs:
 
       - name: Use Custom Actions
         uses: o-ga09/zibun-releaser@v0.0.2
+        with:
+          release-version: 'v1.0.0'
+          github-token: ${{ secrets.PAT }}
+          filepath: "CHANGELOG.md"
+          apikey: ${{ secrets.APIKEY }}
